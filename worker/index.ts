@@ -32,7 +32,7 @@ export default {
         return Response.redirect(`${url.origin}${localePath}${url.search}`, 301)
       }
 
-      return env.ASSETS.fetch(new Request(`${url.origin}/index.html`, request))
+      return env.ASSETS.fetch(new Request(`${url.origin}/`, request))
     }
 
     return env.ASSETS.fetch(request)
