@@ -246,6 +246,11 @@ p, li { margin-top: 0; color: var(--muted); }
   border-radius: var(--radius-md);
   transition: transform var(--ease-smooth), border-color var(--ease-smooth), background var(--ease-smooth);
 }
+
+a.surface-card {
+  text-decoration: none;
+  color: inherit;
+}
 .service-grid .surface-card:nth-child(1) { grid-column: 1 / span 5; }
 .service-grid .surface-card:nth-child(2) { grid-column: 6 / span 4; transform: translateY(18px); }
 .service-grid .surface-card:nth-child(3) { grid-column: 10 / span 3; }
