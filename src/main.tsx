@@ -5,9 +5,14 @@ import './styles.css'
 
 const SITE_ORIGIN = 'https://chiclestudio.com'
 
+function inferLocaleFromNavigator(): Locale {
+  const navLang = typeof navigator !== 'undefined' ? navigator.language.toLowerCase() : 'en'
+  return navLang.startsWith('es') ? 'es' : 'en'
+}
+
 function getLocaleFromPath(pathname: string): Locale {
   const firstSegment = pathname.split('/').filter(Boolean)[0]
-  return (SUPPORTED_LOCALES as readonly string[]).includes(firstSegment) ? (firstSegment as Locale) : 'en'
+  return (SUPPORTED_LOCALES as readonly string[]).includes(firstSegment) ? (firstSegment as Locale) : inferLocaleFromNavigator()
 }
 
 function upsertHeadLink(rel: string, href: string, hreflang?: string) {
@@ -52,6 +57,12 @@ function applySeo(locale: Locale) {
 }
 
 function App() {
+  if (window.location.pathname === '/') {
+    const redirectedLocale = inferLocaleFromNavigator()
+    window.location.replace(`/${redirectedLocale}/`)
+    return null
+  }
+
   const locale = getLocaleFromPath(window.location.pathname)
   const t = contentByLocale[locale]
   const alternateLocale: Locale = locale === 'en' ? 'es' : 'en'
