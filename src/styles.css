@@ -1,0 +1,7 @@
+:root { --bg:#0b1020; --panel:#111833; --text:#e8ecff; --muted:#9aa6d1; --accent:#6ee7ff; }
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(180deg,var(--bg),#0f1530);color:var(--text)}
+.wrap{max-width:900px;margin:0 auto;padding:64px 24px;display:grid;gap:40px}
+.hero{background:var(--panel);padding:32px;border-radius:16px}
+.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+h1{font-size:clamp(2rem,5vw,3.5rem);margin:.2em 0}.cta{display:inline-block;margin-top:12px;background:var(--accent);color:#051019;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+h2{margin-bottom:.3em} p,li{color:var(--muted);line-height:1.6}
