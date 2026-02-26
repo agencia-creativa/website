@@ -166,7 +166,20 @@ function App() {
             </div>
 
             <aside className="hero-visual" aria-label="Studio highlights" data-reveal>
-              <img src="/assets/hero-studio.svg" loading="eager" width="620" height="720" decoding="async" alt={t.hero.visualAlt} />
+              <p className="sr-only">{t.hero.visualAlt}</p>
+              <div className="hero-tile hero-tile-brand">
+                <span>CHICLE</span>
+                <strong>studio</strong>
+              </div>
+              <div className="hero-tile hero-tile-gradient" />
+              <div className="hero-tile hero-tile-dark">
+                <span>Editorial web systems</span>
+                <strong>2026</strong>
+              </div>
+              <div className="hero-tile hero-tile-electric" />
+              <a className="hero-ticket" href="mailto:hola@chiclestudio.com?subject=Project%20brief">
+                {t.hero.primaryCta}
+              </a>
             </aside>
 
             <div className="hero-kpis" aria-label="Performance highlights" data-reveal>
