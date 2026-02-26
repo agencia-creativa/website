@@ -17,3 +17,7 @@ bun run build
 ## Deployment
 GitHub Actions deploys `dist/` to GitHub Pages on push to `main`.
 
+## Governance
+- Code ownership: `CODEOWNERS`
+- Branch strategy: `BRANCH_STRATEGY.md`
+
