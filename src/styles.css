@@ -1,7 +1,91 @@
-:root { --bg:#0b1020; --panel:#111833; --text:#e8ecff; --muted:#9aa6d1; --accent:#6ee7ff; }
-*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(180deg,var(--bg),#0f1530);color:var(--text)}
-.wrap{max-width:900px;margin:0 auto;padding:64px 24px;display:grid;gap:40px}
-.hero{background:var(--panel);padding:32px;border-radius:16px}
-.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
-h1{font-size:clamp(2rem,5vw,3.5rem);margin:.2em 0}.cta{display:inline-block;margin-top:12px;background:var(--accent);color:#051019;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
-h2{margin-bottom:.3em} p,li{color:var(--muted);line-height:1.6}
+:root {
+  --bg: #0b1020;
+  --panel: #111833;
+  --text: #e8ecff;
+  --muted: #9aa6d1;
+  --accent: #6ee7ff;
+  --line: #25305c;
+}
+
+* { box-sizing: border-box }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0f1530);
+  color: var(--text);
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: grid;
+  gap: 40px;
+}
+
+.hero {
+  background: var(--panel);
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.kicker {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: .2em 0 }
+h2 { margin-bottom: .3em }
+h3 { margin: .25em 0 .45em }
+h4 { margin: 1rem 0 .35rem; font-size: .95rem }
+
+p, li { color: var(--muted); line-height: 1.6 }
+
+.cta {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--accent);
+  color: #051019;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.clients-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.client-pill {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: var(--text);
+  text-decoration: none;
+  display: grid;
+  gap: 2px;
+  font-weight: 700;
+}
+
+.client-pill span {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.cards {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 18px;
+}
