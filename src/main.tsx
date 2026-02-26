@@ -83,13 +83,17 @@ function App() {
 
       <main id="main-content">
         <section className="hero" id="top" aria-labelledby="hero-title">
-          <div className="container hero-grid">
+          <div className="container hero-layout">
             <div className="hero-copy-shell" data-reveal>
               <p className="eyebrow">Premium digital execution studio</p>
-              <h1 id="hero-title">Award-level digital craft built to convert with clarity.</h1>
+              <h1 id="hero-title">
+                <span className="display-line">Bold ideas.</span>
+                <span className="display-line">Editorial execution.</span>
+                <span className="display-line">Built to convert.</span>
+              </h1>
               <p className="hero-copy">
-                We design and engineer premium web experiences where visual direction, conversion architecture, and SEO
-                discipline move together.
+                Chicle Studio combines art direction, conversion architecture, and SEO-grade engineering into one premium growth
+                system.
               </p>
               <div className="hero-actions">
                 <a className="btn btn-primary" href="mailto:hola@chiclestudio.com?subject=Start%20a%20project">
@@ -99,11 +103,6 @@ function App() {
                   See case studies
                 </a>
               </div>
-              <ul className="trust-points" aria-label="Trust signals">
-                <li>Design + marketing + engineering in one accountable team</li>
-                <li>Performance-safe visual craft with fast rendering discipline</li>
-                <li>Executive visibility from strategy through launch</li>
-              </ul>
             </div>
 
             <aside className="hero-visual" aria-label="Studio highlights" data-reveal>
@@ -115,36 +114,33 @@ function App() {
                 decoding="async"
                 alt="Abstract editorial collage representing premium digital direction"
               />
-              <div className="hero-kpis">
-                <article>
-                  <strong>120ms</strong>
-                  <span>interaction-ready components</span>
-                </article>
-                <article>
-                  <strong>94+</strong>
-                  <span>Lighthouse performance baseline</span>
-                </article>
-              </div>
             </aside>
+
+            <div className="hero-kpis" aria-label="Performance highlights" data-reveal>
+              <article>
+                <strong>120ms</strong>
+                <span>interaction-ready components</span>
+              </article>
+              <article>
+                <strong>94+</strong>
+                <span>Lighthouse performance baseline</span>
+              </article>
+            </div>
           </div>
         </section>
 
         <section className="section section-services" id="services" aria-labelledby="services-title">
-          <div className="container editorial-grid">
-            <div data-reveal>
+          <div className="container services-layout">
+            <div className="section-lead" data-reveal>
               <p className="eyebrow">Services</p>
-              <h2 id="services-title">Built for launch speed and long-term brand authority.</h2>
-              <p>
-                Every engagement blends visual systems, messaging hierarchy, and technical execution into a durable
-                growth foundation.
-              </p>
+              <h2 id="services-title">Editorial-grade digital systems for brands that need impact now.</h2>
             </div>
             <div className="service-grid">
               <article className="surface-card" data-reveal>
                 <h3>Brand & Experience Direction</h3>
                 <p>Visual systems, interface composition, and storytelling layers that increase trust instantly.</p>
               </article>
-              <article className="surface-card" data-reveal>
+              <article className="surface-card offset-card" data-reveal>
                 <h3>SEO & Growth Foundation</h3>
                 <p>Technical SEO, semantic architecture, and conversion content logic for discoverability and intent.</p>
               </article>
@@ -161,7 +157,7 @@ function App() {
             <div className="section-head" data-reveal>
               <div>
                 <p className="eyebrow">Selected work</p>
-                <h2 id="work-title">Case studies with richer narrative and visual context.</h2>
+                <h2 id="work-title">Case studies with measurable growth impact and premium execution craft.</h2>
               </div>
               <a className="text-link" href="mailto:hola@chiclestudio.com?subject=Request%20full%20case%20study">
                 Request full case-study deck
@@ -213,12 +209,12 @@ function App() {
         </section>
 
         <section className="section" id="process" aria-labelledby="process-title">
-          <div className="container">
+          <div className="container process-shell">
             <p className="eyebrow" data-reveal>
               Execution model
             </p>
             <h2 id="process-title" data-reveal>
-              A disciplined cadence with craft-level detail at every stage.
+              Creative ambition, engineered with precision.
             </h2>
             <ol className="process-grid">
               <li data-reveal>
@@ -247,8 +243,8 @@ function App() {
               <p className="eyebrow">Ready to scale?</p>
               <h2 id="contact-title">Let’s launch your next high-impact digital experience.</h2>
               <p>
-                Share your goals and timelines. We’ll reply with a focused proposal covering scope, milestones, and
-                expected business outcomes.
+                Share your goals and timelines. We’ll reply with a focused proposal covering scope, milestones, and expected
+                business outcomes.
               </p>
             </div>
             <div className="contact-actions">
