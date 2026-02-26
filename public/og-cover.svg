@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="20" x2="1120" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A132B"/>
+      <stop offset="1" stop-color="#182C5F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="90" r="210" fill="#7CF7FF" fill-opacity="0.2"/>
+  <text x="92" y="262" fill="#8AF1FF" font-size="38" font-family="Inter, Arial, sans-serif" letter-spacing="6">AGENCIA CREATIVA</text>
+  <text x="92" y="348" fill="#EFF4FF" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="700">Design. SEO. Growth.</text>
+  <text x="92" y="418" fill="#C8D6FF" font-size="33" font-family="Inter, Arial, sans-serif">Premium web experiences aligned to measurable business impact.</text>
+</svg>
