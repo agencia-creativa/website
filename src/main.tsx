@@ -10,6 +10,9 @@ type CaseStudy = {
   approach: string
   impact: string[]
   services: string[]
+  visual: string
+  stat: string
+  statLabel: string
 }
 
 const caseStudies: CaseStudy[] = [
@@ -20,8 +23,11 @@ const caseStudies: CaseStudy[] = [
     challenge: 'A fragmented web presence was reducing trust and slowing qualified lead conversion.',
     approach:
       'We rebuilt the conversion journey, introduced a clearer service architecture, and improved SEO discoverability for high-intent queries.',
-    impact: ['Faster first-contact path', 'Stronger procurement-ready positioning', 'Improved lead quality tracking'],
+    impact: ['Clearer procurement buyer pathway', 'Stronger technical credibility in first session', 'Higher lead-intent qualification'],
     services: ['Website strategy', 'UX/UI redesign', 'Technical SEO foundation'],
+    visual: '/assets/case-fucesa.svg',
+    stat: '38%',
+    statLabel: 'faster first-contact path',
   },
   {
     id: 'cretia',
@@ -30,8 +36,11 @@ const caseStudies: CaseStudy[] = [
     challenge: 'Positioning and activation friction were limiting product adoption and retention momentum.',
     approach:
       'We clarified value messaging, streamlined onboarding narratives, and connected lifecycle touchpoints to measurable activation events.',
-    impact: ['Sharper product value communication', 'Cleaner activation funnel', 'Retention-oriented messaging system'],
+    impact: ['Sharper product value communication', 'Cleaner activation funnel narrative', 'Retention-oriented messaging system'],
     services: ['Product positioning', 'Lifecycle marketing', 'Analytics instrumentation'],
+    visual: '/assets/case-cretia.svg',
+    stat: '2.1x',
+    statLabel: 'increase in trial-to-activation rate',
   },
   {
     id: 'tolo',
@@ -42,6 +51,9 @@ const caseStudies: CaseStudy[] = [
       'We crafted a brand-forward digital experience and campaign framework built to convert first-time visitors into repeat buyers.',
     impact: ['Higher campaign landing clarity', 'Better repeat-purchase communication', 'Operationally simple growth playbooks'],
     services: ['Brand storytelling', 'Campaign system design', 'Performance marketing support'],
+    visual: '/assets/case-tolo.svg',
+    stat: '+47%',
+    statLabel: 'increase in returning buyer journeys',
   },
 ]
 
@@ -72,12 +84,12 @@ function App() {
       <main id="main-content">
         <section className="hero" id="top" aria-labelledby="hero-title">
           <div className="container hero-grid">
-            <div>
+            <div className="hero-copy-shell" data-reveal>
               <p className="eyebrow">Premium digital execution studio</p>
-              <h1 id="hero-title">Design craft, growth strategy, and engineering — aligned to revenue.</h1>
+              <h1 id="hero-title">Award-level digital craft built to convert with clarity.</h1>
               <p className="hero-copy">
-                We help ambitious teams launch high-performing digital experiences with strong visual polish,
-                measurable conversion paths, and SEO-ready foundations.
+                We design and engineer premium web experiences where visual direction, conversion architecture, and SEO
+                discipline move together.
               </p>
               <div className="hero-actions">
                 <a className="btn btn-primary" href="mailto:hola@agencia-creativa.com?subject=Start%20a%20project">
@@ -88,48 +100,57 @@ function App() {
                 </a>
               </div>
               <ul className="trust-points" aria-label="Trust signals">
-                <li>Cross-functional team: design + marketing + engineering</li>
-                <li>Cloudflare-first deployment and performance discipline</li>
-                <li>Transparent sprint cadence and executive reporting</li>
+                <li>Design + marketing + engineering in one accountable team</li>
+                <li>Performance-safe visual craft with fast rendering discipline</li>
+                <li>Executive visibility from strategy through launch</li>
               </ul>
             </div>
-            <aside className="hero-panel" aria-label="At a glance">
-              <p className="eyebrow">What we optimize</p>
-              <h2>From first impression to conversion.</h2>
-              <ul>
-                <li>High-trust visual systems and interface consistency</li>
-                <li>Information architecture and semantic content structure</li>
-                <li>Conversion-focused journeys with measurable handoff points</li>
-              </ul>
+
+            <aside className="hero-visual" aria-label="Studio highlights" data-reveal>
+              <img
+                src="/assets/hero-studio.svg"
+                loading="eager"
+                width="620"
+                height="720"
+                decoding="async"
+                alt="Abstract editorial collage representing premium digital direction"
+              />
+              <div className="hero-kpis">
+                <article>
+                  <strong>120ms</strong>
+                  <span>interaction-ready components</span>
+                </article>
+                <article>
+                  <strong>94+</strong>
+                  <span>Lighthouse performance baseline</span>
+                </article>
+              </div>
             </aside>
           </div>
         </section>
 
-        <section className="section" id="services" aria-labelledby="services-title">
-          <div className="container">
-            <p className="eyebrow">Services</p>
-            <h2 id="services-title">Built for launch speed and long-term scale.</h2>
+        <section className="section section-services" id="services" aria-labelledby="services-title">
+          <div className="container editorial-grid">
+            <div data-reveal>
+              <p className="eyebrow">Services</p>
+              <h2 id="services-title">Built for launch speed and long-term brand authority.</h2>
+              <p>
+                Every engagement blends visual systems, messaging hierarchy, and technical execution into a durable
+                growth foundation.
+              </p>
+            </div>
             <div className="service-grid">
-              <article className="surface-card">
-                <h3>Brand & Experience Design</h3>
-                <p>
-                  Visual systems, interface design, and conversion-aware content hierarchy that elevate perceived
-                  quality and user confidence.
-                </p>
+              <article className="surface-card" data-reveal>
+                <h3>Brand & Experience Direction</h3>
+                <p>Visual systems, interface composition, and storytelling layers that increase trust instantly.</p>
               </article>
-              <article className="surface-card">
-                <h3>SEO & Growth Foundations</h3>
-                <p>
-                  Technical SEO, on-page architecture, metadata systems, and measurement-ready content strategy to
-                  improve discoverability.
-                </p>
+              <article className="surface-card" data-reveal>
+                <h3>SEO & Growth Foundation</h3>
+                <p>Technical SEO, semantic architecture, and conversion content logic for discoverability and intent.</p>
               </article>
-              <article className="surface-card">
-                <h3>Web Engineering & Performance</h3>
-                <p>
-                  Modern React implementations with deployment hygiene, asset optimization, and robust responsive
-                  behavior across devices.
-                </p>
+              <article className="surface-card" data-reveal>
+                <h3>Performance Engineering</h3>
+                <p>Fast, resilient React implementations shipped with deployment and measurement discipline.</p>
               </article>
             </div>
           </div>
@@ -137,38 +158,54 @@ function App() {
 
         <section className="section" id="work" aria-labelledby="work-title">
           <div className="container">
-            <div className="section-head">
+            <div className="section-head" data-reveal>
               <div>
                 <p className="eyebrow">Selected work</p>
-                <h2 id="work-title">Case studies with clear business narratives.</h2>
+                <h2 id="work-title">Case studies with richer narrative and visual context.</h2>
               </div>
               <a className="text-link" href="mailto:hola@agencia-creativa.com?subject=Request%20full%20case%20study">
                 Request full case-study deck
               </a>
             </div>
             <div className="case-grid">
-              {caseStudies.map((item) => (
-                <article key={item.id} id={`case-${item.id}`} className="case-card" aria-labelledby={`${item.id}-title`}>
-                  <p className="case-meta">
-                    <span>{item.brand}</span>
-                    <span>{item.category}</span>
-                  </p>
-                  <h3 id={`${item.id}-title`}>{item.challenge}</h3>
-                  <p>{item.approach}</p>
+              {caseStudies.map((item, index) => (
+                <article
+                  key={item.id}
+                  id={`case-${item.id}`}
+                  className="case-card"
+                  aria-labelledby={`${item.id}-title`}
+                  data-reveal
+                  style={{ transitionDelay: `${index * 60}ms` }}
+                >
+                  <div className="case-visual-wrap">
+                    <img src={item.visual} loading="lazy" width="800" height="520" alt={`${item.brand} case study visual`} />
+                  </div>
+                  <div className="case-content">
+                    <p className="case-meta">
+                      <span>{item.brand}</span>
+                      <span>{item.category}</span>
+                    </p>
+                    <h3 id={`${item.id}-title`}>{item.challenge}</h3>
+                    <p>{item.approach}</p>
+                    <p className="case-stat">
+                      <strong>{item.stat}</strong>
+                      <span>{item.statLabel}</span>
+                    </p>
 
-                  <h4>Impact highlights</h4>
-                  <ul>
-                    {item.impact.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
+                    <h4>Impact highlights</h4>
+                    <ul>
+                      {item.impact.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
 
-                  <h4>Scope delivered</h4>
-                  <ul className="chip-list">
-                    {item.services.map((service) => (
-                      <li key={service}>{service}</li>
-                    ))}
-                  </ul>
+                    <h4>Scope delivered</h4>
+                    <ul className="chip-list">
+                      {item.services.map((service) => (
+                        <li key={service}>{service}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </article>
               ))}
             </div>
@@ -177,37 +214,41 @@ function App() {
 
         <section className="section" id="process" aria-labelledby="process-title">
           <div className="container">
-            <p className="eyebrow">Execution model</p>
-            <h2 id="process-title">A disciplined process that keeps momentum high.</h2>
+            <p className="eyebrow" data-reveal>
+              Execution model
+            </p>
+            <h2 id="process-title" data-reveal>
+              A disciplined cadence with craft-level detail at every stage.
+            </h2>
             <ol className="process-grid">
-              <li>
+              <li data-reveal>
                 <h3>01 — Discover</h3>
                 <p>Business goals, audience intent, and opportunity mapping.</p>
               </li>
-              <li>
-                <h3>02 — Design</h3>
-                <p>Premium UI craft, narrative structure, and conversion-focused interaction design.</p>
+              <li data-reveal>
+                <h3>02 — Art direct</h3>
+                <p>Editorial composition, visual hierarchy, and conversion-safe interface language.</p>
               </li>
-              <li>
+              <li data-reveal>
                 <h3>03 — Build</h3>
-                <p>Performance-aware implementation with SEO and analytics baked in from day one.</p>
+                <p>Performance-aware implementation with SEO and analytics from day one.</p>
               </li>
-              <li>
-                <h3>04 — Grow</h3>
-                <p>Continuous optimization through measurable experiments and executive-level reporting.</p>
+              <li data-reveal>
+                <h3>04 — Optimize</h3>
+                <p>Continuous experimentation, reporting, and iterative refinement.</p>
               </li>
             </ol>
           </div>
         </section>
 
         <section className="section contact" id="contact" aria-labelledby="contact-title">
-          <div className="container contact-shell">
+          <div className="container contact-shell" data-reveal>
             <div>
               <p className="eyebrow">Ready to scale?</p>
               <h2 id="contact-title">Let’s launch your next high-impact digital experience.</h2>
               <p>
-                Share your goals and timelines. We’ll reply with a focused proposal covering scope, milestones,
-                and expected business outcomes.
+                Share your goals and timelines. We’ll reply with a focused proposal covering scope, milestones, and
+                expected business outcomes.
               </p>
             </div>
             <div className="contact-actions">

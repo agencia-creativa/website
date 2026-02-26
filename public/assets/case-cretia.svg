@@ -1,0 +1,26 @@
+<svg width="1280" height="820" viewBox="0 0 1280 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cretia project visual">
+  <defs>
+    <linearGradient id="c" x1="1240" y1="0" x2="80" y2="820">
+      <stop stop-color="#2A2F87"/>
+      <stop offset="1" stop-color="#111D4D"/>
+    </linearGradient>
+    <radialGradient id="d" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 180) rotate(134) scale(300 260)">
+      <stop stop-color="#85F2FF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#85F2FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="820" rx="26" fill="url(#c)"/>
+  <rect x="74" y="74" width="1132" height="672" rx="24" stroke="#C4D6FF" stroke-opacity="0.34"/>
+  <rect x="126" y="126" width="1028" height="568" rx="20" fill="#13255A"/>
+  <rect x="166" y="170" width="410" height="478" rx="18" fill="#182B65"/>
+  <rect x="608" y="170" width="504" height="212" rx="18" fill="#172A61"/>
+  <rect x="608" y="406" width="504" height="242" rx="18" fill="#142659"/>
+  <rect x="208" y="228" width="328" height="14" rx="7" fill="#DCE8FF" fill-opacity="0.78"/>
+  <rect x="208" y="266" width="286" height="11" rx="5.5" fill="#BAD0FF" fill-opacity="0.58"/>
+  <rect x="208" y="298" width="256" height="11" rx="5.5" fill="#BAD0FF" fill-opacity="0.42"/>
+  <path d="M644 240H1082" stroke="#DCE8FF" stroke-opacity="0.66" stroke-width="13" stroke-linecap="round"/>
+  <path d="M644 286H1004" stroke="#BED3FF" stroke-opacity="0.5" stroke-width="9" stroke-linecap="round"/>
+  <path d="M644 476H1082" stroke="#DCE8FF" stroke-opacity="0.66" stroke-width="13" stroke-linecap="round"/>
+  <path d="M644 522H986" stroke="#BED3FF" stroke-opacity="0.5" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="1000" cy="180" r="148" fill="url(#d)"/>
+</svg>

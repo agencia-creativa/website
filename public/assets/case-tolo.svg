@@ -1,0 +1,20 @@
+<svg width="1280" height="820" viewBox="0 0 1280 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TOLO project visual">
+  <defs>
+    <linearGradient id="e" x1="0" y1="0" x2="1280" y2="820">
+      <stop stop-color="#2D3E85"/>
+      <stop offset="1" stop-color="#152454"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="820" rx="26" fill="url(#e)"/>
+  <rect x="74" y="74" width="1132" height="672" rx="24" stroke="#C9DAFF" stroke-opacity="0.34"/>
+  <rect x="126" y="126" width="676" height="566" rx="20" fill="#162A63"/>
+  <rect x="834" y="126" width="320" height="566" rx="20" fill="#132357"/>
+  <rect x="182" y="186" width="562" height="248" rx="18" fill="#1B3271"/>
+  <rect x="182" y="470" width="168" height="168" rx="18" fill="#96A4FF" fill-opacity="0.52"/>
+  <rect x="374" y="470" width="168" height="168" rx="18" fill="#7DEEFF" fill-opacity="0.44"/>
+  <rect x="566" y="470" width="168" height="168" rx="18" fill="#B09BFF" fill-opacity="0.34"/>
+  <rect x="876" y="194" width="236" height="14" rx="7" fill="#E1EBFF" fill-opacity="0.8"/>
+  <rect x="876" y="236" width="200" height="10" rx="5" fill="#C1D5FF" fill-opacity="0.58"/>
+  <rect x="876" y="266" width="184" height="10" rx="5" fill="#C1D5FF" fill-opacity="0.42"/>
+  <rect x="876" y="334" width="236" height="250" rx="16" fill="#1A2F68"/>
+</svg>

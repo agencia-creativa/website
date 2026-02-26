@@ -1,0 +1,28 @@
+<svg width="1280" height="820" viewBox="0 0 1280 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FUCESA project visual">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1280" y2="820">
+      <stop stop-color="#293C82"/>
+      <stop offset="1" stop-color="#101D47"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0" y1="410" x2="1280" y2="410">
+      <stop stop-color="#90B8FF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#6CF0FF" stop-opacity="0.23"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="820" rx="26" fill="url(#a)"/>
+  <rect x="52" y="60" width="1176" height="700" rx="24" stroke="#BDD3FF" stroke-opacity="0.36"/>
+  <rect x="102" y="126" width="468" height="540" rx="20" fill="#15275C"/>
+  <rect x="620" y="126" width="556" height="240" rx="20" fill="#15275C"/>
+  <rect x="620" y="402" width="556" height="264" rx="20" fill="#12224F"/>
+  <path d="M140 220H530" stroke="#DCE8FF" stroke-opacity="0.7" stroke-width="14" stroke-linecap="round"/>
+  <path d="M140 266H472" stroke="#BFD4FF" stroke-opacity="0.6" stroke-width="10" stroke-linecap="round"/>
+  <path d="M140 302H430" stroke="#BFD4FF" stroke-opacity="0.42" stroke-width="10" stroke-linecap="round"/>
+  <rect x="140" y="370" width="124" height="124" rx="16" fill="#95A6FF" fill-opacity="0.56"/>
+  <rect x="284" y="370" width="124" height="124" rx="16" fill="#70EBFF" fill-opacity="0.44"/>
+  <rect x="428" y="370" width="102" height="124" rx="16" fill="#A696FF" fill-opacity="0.36"/>
+  <path d="M660 212H1128" stroke="#DCE8FF" stroke-opacity="0.68" stroke-width="14" stroke-linecap="round"/>
+  <path d="M660 258H1048" stroke="#BFD4FF" stroke-opacity="0.52" stroke-width="10" stroke-linecap="round"/>
+  <path d="M660 516H1128" stroke="#DCE8FF" stroke-opacity="0.68" stroke-width="14" stroke-linecap="round"/>
+  <path d="M660 562H980" stroke="#BFD4FF" stroke-opacity="0.52" stroke-width="10" stroke-linecap="round"/>
+  <rect x="660" y="612" width="176" height="26" rx="13" fill="url(#b)"/>
+</svg>
