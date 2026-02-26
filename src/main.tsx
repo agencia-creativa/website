@@ -66,8 +66,8 @@ function App() {
 
       <header className="site-header" aria-label="Top navigation">
         <div className="container nav-shell">
-          <a className="brand" href="#top" aria-label="Agencia Creativa home">
-            Agencia Creativa
+          <a className="brand" href="#top" aria-label="Chicle Studio home">
+            Chicle Studio
           </a>
           <nav className="main-nav" aria-label="Primary">
             <a href="#services">Services</a>
@@ -75,7 +75,7 @@ function App() {
             <a href="#process">Process</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a className="nav-cta" href="mailto:hola@agencia-creativa.com?subject=New%20project%20inquiry">
+          <a className="nav-cta" href="mailto:hola@chiclestudio.com?subject=New%20project%20inquiry">
             Book strategy call
           </a>
         </div>
@@ -92,7 +92,7 @@ function App() {
                 discipline move together.
               </p>
               <div className="hero-actions">
-                <a className="btn btn-primary" href="mailto:hola@agencia-creativa.com?subject=Start%20a%20project">
+                <a className="btn btn-primary" href="mailto:hola@chiclestudio.com?subject=Start%20a%20project">
                   Start your project
                 </a>
                 <a className="btn btn-ghost" href="#work">
@@ -163,7 +163,7 @@ function App() {
                 <p className="eyebrow">Selected work</p>
                 <h2 id="work-title">Case studies with richer narrative and visual context.</h2>
               </div>
-              <a className="text-link" href="mailto:hola@agencia-creativa.com?subject=Request%20full%20case%20study">
+              <a className="text-link" href="mailto:hola@chiclestudio.com?subject=Request%20full%20case%20study">
                 Request full case-study deck
               </a>
             </div>
@@ -252,10 +252,10 @@ function App() {
               </p>
             </div>
             <div className="contact-actions">
-              <a className="btn btn-primary" href="mailto:hola@agencia-creativa.com?subject=Project%20brief">
+              <a className="btn btn-primary" href="mailto:hola@chiclestudio.com?subject=Project%20brief">
                 Email project brief
               </a>
-              <a className="btn btn-ghost" href="mailto:hola@agencia-creativa.com?subject=Book%20strategy%20call">
+              <a className="btn btn-ghost" href="mailto:hola@chiclestudio.com?subject=Book%20strategy%20call">
                 Book a strategy call
               </a>
             </div>
@@ -265,7 +265,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="container footer-shell">
-          <p>© {new Date().getFullYear()} Agencia Creativa. Built for speed, clarity, and growth.</p>
+          <p>© {new Date().getFullYear()} Chicle Studio. Built for speed, clarity, and growth.</p>
           <a href="#top">Back to top</a>
         </div>
       </footer>

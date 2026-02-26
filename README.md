@@ -1,11 +1,19 @@
 # website
 
-Canonical website repository for `agencia-creativa`.
+Canonical website repository for `chicle-studio`.
 
-## Stack
+## Core Stack Standard (Authoritative)
+- Cloudflare
+- TypeScript
+- React
+- Figma
+- PostHog
+- Notion
+- Google Services
+
+## Local Build Runtime
 - Runtime preference: Bun
-- Language: TypeScript
-- Framework: React + Vite
+- Tooling: Vite
 
 ## Commands
 ```bash
@@ -15,7 +23,7 @@ bun run build
 ```
 
 ## Deployment
-GitHub Actions deploys `dist/` to Cloudflare Workers (`agencia-creativa-website`) on push to `main`.
+GitHub Actions deploys `dist/` to Cloudflare Workers (`chiclestudio-website`) on push to `main`.
 
 ### Required GitHub Actions secrets / vars
 - `CLOUDFLARE_API_TOKEN` (Secret: Cloudflare API token with Workers deploy permissions)

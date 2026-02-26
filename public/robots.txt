@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://agencia-creativa.com/sitemap.xml
+Sitemap: https://chiclestudio.com/sitemap.xml

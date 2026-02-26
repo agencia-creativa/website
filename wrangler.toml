@@ -1,4 +1,4 @@
-name = "agencia-creativa-website"
+name = "chiclestudio-website"
 main = "worker/index.ts"
 compatibility_date = "2026-02-26"
 workers_dev = true
