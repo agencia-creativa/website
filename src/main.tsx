@@ -69,6 +69,55 @@ function App() {
 
   useEffect(() => {
     applySeo(locale)
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const revealElements = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'))
+
+    if (!reducedMotion) {
+      document.body.classList.add('motion-on')
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible')
+              observer.unobserve(entry.target)
+            }
+          }
+        },
+        { threshold: 0.08, rootMargin: '0px 0px -6% 0px' },
+      )
+
+      revealElements.forEach((el, index) => {
+        if (index < 3) el.classList.add('is-visible')
+        observer.observe(el)
+      })
+
+      const revealFailSafe = window.setTimeout(() => {
+        revealElements.forEach((el) => el.classList.add('is-visible'))
+      }, 900)
+
+      const heroVisual = document.querySelector<HTMLElement>('.hero-visual')
+      const onMove = (event: MouseEvent) => {
+        if (!heroVisual) return
+        const { innerWidth, innerHeight } = window
+        const x = (event.clientX / innerWidth - 0.5) * 6
+        const y = (event.clientY / innerHeight - 0.5) * 6
+        heroVisual.style.setProperty('--parallax-x', `${x}px`)
+        heroVisual.style.setProperty('--parallax-y', `${y}px`)
+      }
+      window.addEventListener('mousemove', onMove, { passive: true })
+
+      return () => {
+        observer.disconnect()
+        window.removeEventListener('mousemove', onMove)
+        window.clearTimeout(revealFailSafe)
+        document.body.classList.remove('motion-on')
+      }
+    }
+
+    revealElements.forEach((el) => el.classList.add('is-visible'))
+    document.body.classList.remove('motion-on')
+    return undefined
   }, [locale])
 
   return (
@@ -131,7 +180,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section section-services" id="services" aria-labelledby="services-title">
+        <section className="section section-services section-transition-a" id="services" aria-labelledby="services-title">
           <div className="container services-layout">
             <div className="section-lead" data-reveal>
               <p className="eyebrow">{t.services.eyebrow}</p>
@@ -148,7 +197,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="work" aria-labelledby="work-title">
+        <section className="section section-transition-b" id="work" aria-labelledby="work-title">
           <div className="container">
             <div className="section-head" data-reveal>
               <div>
@@ -167,11 +216,12 @@ function App() {
                   className="case-card"
                   aria-labelledby={`${item.id}-title`}
                   data-reveal
-                  style={{ transitionDelay: `${index * 60}ms` }}
+                  style={{ transitionDelay: `${index * 70}ms` }}
                 >
-                  <div className="case-visual-wrap">
-                    <img src={item.visual} loading="lazy" width="800" height="520" alt={`${item.brand} case study visual`} />
-                  </div>
+                  <figure className="case-visual-wrap">
+                    <img src={item.visual} loading="lazy" width="800" height="1200" alt={`${item.brand} website screenshot`} />
+                    <figcaption>{item.id === 'fucesa' ? 'fucesa.com' : item.id === 'cretia' ? 'cretia.app' : 'tolo.cafe'}</figcaption>
+                  </figure>
                   <div className="case-content">
                     <p className="case-meta">
                       <span>{item.brand}</span>
@@ -204,7 +254,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="process" aria-labelledby="process-title">
+        <section className="section section-transition-c" id="process" aria-labelledby="process-title">
           <div className="container process-shell">
             <p className="eyebrow" data-reveal>
               {t.process.eyebrow}
