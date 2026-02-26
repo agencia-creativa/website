@@ -15,7 +15,14 @@ bun run build
 ```
 
 ## Deployment
-GitHub Actions deploys `dist/` to GitHub Pages on push to `main`.
+GitHub Actions deploys `dist/` to Cloudflare Workers (`agencia-creativa-website`) on push to `main`.
+
+### Required GitHub repository secrets
+- `CLOUDFLARE_API_TOKEN` (Cloudflare API token with Workers deploy permissions)
+- `CLOUDFLARE_ACCOUNT_ID` (Cloudflare account ID)
+
+Workflow file: `.github/workflows/deploy-workers.yml`
+Wrangler config: `wrangler.toml`
 
 ## Governance
 - Code ownership: `CODEOWNERS`
