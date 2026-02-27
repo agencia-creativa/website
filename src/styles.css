@@ -92,7 +92,7 @@ img { max-width: 100%; display: block; }
 .case-card,
 .process-grid li,
 .contact-shell {
-  border: 1px solid var(--line);
+  border: none;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   background: var(--surface);
@@ -121,7 +121,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-tile {
   border-radius: 9px;
-  border: 1px solid #b7b7b7;
+  border: none;
   padding: .65rem;
   display: flex;
   flex-direction: column;
@@ -159,7 +159,7 @@ img { max-width: 100%; display: block; }
   font-size: .72rem;
   letter-spacing: .12em;
   text-transform: uppercase;
-  border: 1px solid #b9b9b9;
+  border: none;
   border-radius: 8px;
   padding: .7rem .56rem;
   background: #f7f7f7;
@@ -173,7 +173,7 @@ img { max-width: 100%; display: block; }
   padding: .6rem;
   background: #e1e1e1;
 }
-.hero-kpis article { padding: .8rem; border-radius: var(--radius-md); border: 1px solid #bcbcbc; background: #f5f5f5; }
+.hero-kpis article { padding: .8rem; border-radius: var(--radius-md); border: none; background: #f5f5f5; }
 .hero-kpis strong { display: block; font-size: 1.36rem; line-height: 1.05; color: #111; }
 .hero-kpis span { color: var(--muted); font-size: .82rem; }
 
@@ -254,7 +254,7 @@ a.surface-card {
 .service-grid .surface-card:nth-child(1) { grid-column: 1 / span 5; }
 .service-grid .surface-card:nth-child(2) { grid-column: 6 / span 4; transform: translateY(18px); }
 .service-grid .surface-card:nth-child(3) { grid-column: 10 / span 3; }
-.surface-card:hover { transform: translateY(-6px); border-color: #9f9f9f; background: #fff; }
+.surface-card:hover { transform: translateY(-6px); background: #fff; }
 
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 1rem; }
 .case-grid { margin-top: 1rem; }
@@ -264,15 +264,15 @@ a.surface-card {
   gap: 1rem;
   padding: .9rem;
   border-radius: var(--radius-md);
-  transition: transform var(--ease-smooth), border-color var(--ease-smooth);
+  transition: transform var(--ease-smooth);
 }
 .case-card:nth-child(2n) { grid-template-columns: minmax(0, 1fr) minmax(250px, 34%); }
 .case-card:nth-child(2n) .case-visual-wrap { order: 2; }
-.case-card:hover { transform: translateY(-4px); border-color: #989898; }
+.case-card:hover { transform: translateY(-4px); }
 .case-visual-wrap { margin: 0; display: grid; gap: .4rem; }
 .case-visual-wrap img {
   border-radius: var(--radius-md);
-  border: 1px solid #bdbdbd;
+  border: none;
   aspect-ratio: 4 / 5;
   width: 100%;
   object-fit: cover;
