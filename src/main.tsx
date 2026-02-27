@@ -368,6 +368,9 @@ function HomePage({ locale }: { locale: Locale }) {
               <a className="btn btn-ghost" href={buildPath(locale, 'work')}>
                 {t.hero.secondaryCta}
               </a>
+              <a className="text-link" href="mailto:hola@chiclestudio.com?subject=Capabilities%20Deck">
+                {locale === 'es' ? 'Descargar capabilities deck' : 'Download capabilities deck'}
+              </a>
             </div>
           </div>
           <aside className="hero-visual" aria-label="Studio highlights" data-reveal>
@@ -385,6 +388,15 @@ function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
 
+      <section className="trust-rail" aria-label={locale === 'es' ? 'Confianza y credenciales' : 'Trust and credentials'}>
+        <div className="container trust-rail-inner" data-reveal>
+          <span>{locale === 'es' ? 'Awwwards Honorable Mention' : 'Awwwards Honorable Mention'}</span>
+          <span>+180% avg. launch uplift</span>
+          <span>{locale === 'es' ? 'Equipo remoto global' : 'Global remote team'}</span>
+          <span>{locale === 'es' ? 'Marcas en MX, US y LATAM' : 'Brands across MX, US, and LATAM'}</span>
+        </div>
+      </section>
+
       <section className="section section-transition-a" aria-label="Explore Chicle Studio">
         <div className="container service-grid">
           <a className="surface-card" href={buildPath(locale, 'services')} data-reveal>
@@ -399,6 +411,75 @@ function HomePage({ locale }: { locale: Locale }) {
             <h3>{locale === 'es' ? 'Nuestra forma de trabajar' : 'How we work'}</h3>
             <p>{locale === 'es' ? 'Proceso editorial + ejecución técnica para conversión.' : 'Editorial process + technical execution for conversion.'}</p>
           </a>
+        </div>
+      </section>
+
+      <section className="manifesto-band" aria-label={locale === 'es' ? 'Manifiesto del estudio' : 'Studio manifesto'}>
+        <div className="manifesto-track">
+          <span>Editorial systems</span>
+          <span>•</span>
+          <span>Conversion storytelling</span>
+          <span>•</span>
+          <span>Frictionless performance</span>
+          <span>•</span>
+          <span>{locale === 'es' ? 'Hecho para crecer' : 'Built to scale'}</span>
+        </div>
+      </section>
+
+      <section className="section section-process" aria-labelledby="process-title">
+        <div className="container">
+          <div className="section-head" data-reveal>
+            <div>
+              <p className="eyebrow">{t.process.eyebrow}</p>
+              <h2 id="process-title">{t.process.title}</h2>
+            </div>
+          </div>
+          <ol className="process-grid" data-reveal>
+            {t.process.steps.map((step) => (
+              <li key={step.title}>
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="section testimonials" aria-label={locale === 'es' ? 'Testimonios' : 'Testimonials'}>
+        <div className="container quote-wall" data-reveal>
+          <blockquote>
+            “{locale === 'es' ? 'Nos ayudaron a convertir claridad estratégica en crecimiento medible en menos de un trimestre.' : 'They turned strategic clarity into measurable growth in under a quarter.'}”
+            <cite>— FUCESA</cite>
+          </blockquote>
+          <blockquote>
+            “{locale === 'es' ? 'El nuevo sitio elevó nuestra percepción premium y mejoró activación desde la primera semana.' : 'The new site elevated our premium perception and improved activation in week one.'}”
+            <cite>— Cretia</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section className="section insights" aria-label={locale === 'es' ? 'Insights' : 'Insights'}>
+        <div className="container insight-grid">
+          {[
+            locale === 'es' ? 'Cómo conectar narrativa editorial y SEO técnico sin sacrificar performance' : 'How to connect editorial narrative and technical SEO without sacrificing performance',
+            locale === 'es' ? 'Sistemas de contenido para ciclos de venta complejos' : 'Content systems for complex sales cycles',
+            locale === 'es' ? 'Diseñar para conversión premium: jerarquía, ritmo y prueba social' : 'Designing for premium conversion: hierarchy, rhythm, and social proof',
+          ].map((title) => (
+            <article key={title} className="surface-card" data-reveal>
+              <p className="eyebrow">{locale === 'es' ? 'Insight' : 'Insight'}</p>
+              <h3>{title}</h3>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section final-cta" aria-label={locale === 'es' ? 'Llamado final' : 'Final call to action'}>
+        <div className="container final-cta-shell" data-reveal>
+          <h2>{locale === 'es' ? 'Listos para construir deseo en crecimiento.' : 'Ready to build desire into growth.'}</h2>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href={buildPath(locale, 'contact')}>{locale === 'es' ? 'Iniciar proyecto' : 'Start your project'}</a>
+            <a className="btn btn-ghost" href={buildPath(locale, 'work')}>{locale === 'es' ? 'Explorar casos' : 'Explore case studies'}</a>
+          </div>
         </div>
       </section>
     </>

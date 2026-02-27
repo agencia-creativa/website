@@ -1,7 +1,7 @@
 # Branch Strategy
 
 ## Default branch
-- `main` is the production branch and deployment source for GitHub Pages.
+- `main` is the production branch and deployment source for Cloudflare Workers.
 
 ## Expected flow
 1. Create feature/fix branches from `main`

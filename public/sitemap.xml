@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chiclestudio.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://chiclestudio.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chiclestudio.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://chiclestudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chiclestudio.com/en/"/>
   </url>
+  <url>
+    <loc>https://chiclestudio.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chiclestudio.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://chiclestudio.com/es/"/>
+  </url>
+
+  <url><loc>https://chiclestudio.com/en/work</loc></url>
+  <url><loc>https://chiclestudio.com/es/trabajos</loc></url>
+
+  <url><loc>https://chiclestudio.com/en/work/tolo</loc></url>
+  <url><loc>https://chiclestudio.com/es/trabajos/tolo</loc></url>
+  <url><loc>https://chiclestudio.com/en/work/cretia</loc></url>
+  <url><loc>https://chiclestudio.com/es/trabajos/cretia</loc></url>
+  <url><loc>https://chiclestudio.com/en/work/fucesa</loc></url>
+  <url><loc>https://chiclestudio.com/es/trabajos/fucesa</loc></url>
+
+  <url><loc>https://chiclestudio.com/en/services</loc></url>
+  <url><loc>https://chiclestudio.com/es/servicios</loc></url>
+  <url><loc>https://chiclestudio.com/en/about</loc></url>
+  <url><loc>https://chiclestudio.com/es/nosotros</loc></url>
+  <url><loc>https://chiclestudio.com/en/contact</loc></url>
+  <url><loc>https://chiclestudio.com/es/contacto</loc></url>
 </urlset>
